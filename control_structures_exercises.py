@@ -368,32 +368,3 @@ for x in books:
         print('\n{} falls under the genre of {}'.format(x['title'], gen))
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
