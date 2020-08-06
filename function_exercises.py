@@ -14,7 +14,7 @@ def is_two(x):
     # if x is not 2 or '2', return false
     if x != 2 and x != '2':                                
         return False
-     # if x is 2 or '2', return true with a cool statement
+     # if x is 2 or '2', return true 
     elif x == 2 or x == '2':                            
         return True
 
