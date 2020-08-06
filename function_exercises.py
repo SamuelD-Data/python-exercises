@@ -38,7 +38,7 @@ def is_vowel(s):
         print (f'{s} is a consonant')
         return False   
     else:
-        print(f'{s} is a string of multiple characters, please pass a single character')
+        return(f'{s} is a string of multiple characters, please pass a single character')
     
 is_vowel('a')
 
