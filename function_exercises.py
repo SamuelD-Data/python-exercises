@@ -11,10 +11,8 @@ def is_two(x):
     assert type(x) == str or type(x) == int, 'argument passed is not a string or integer '  # check if x is a str or int
     
     if x != 2 and x != '2':                                # if x is not 2 or '2', return false
-        print ('argument passed is not a 2')
         return False
     elif x == 2 or x == '2':                               # if x is 2 or '2', return true with a cool statement
-        print('argument passed is 2, thats 2 cool!')
         return True
 
 is_two('2')
@@ -32,10 +30,8 @@ def is_vowel(s):
     consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
     
     if s.lower() in vowels:  # using list of single vowels to ensure double vowels (ae, iu, etc) dont pass check
-        print (f'{s} is a vowel')
         return True
     elif s.lower() in consonants:    # using list of consontants to avoid double consonants being passed as a single consonant in next exercise
-        print (f'{s} is a consonant')
         return False   
     else:
         return(f'{s} is a string of multiple characters, please pass a single character')
@@ -66,12 +62,10 @@ is_consonant('v')
 def capital_consonant(s):
     assert type(s) == str, 'argument passed is not a string' # check if argument is a string
     
-    if s[0].lower() not in 'aeiou': # check if first letter is a vowel. alternative is to remove .lower and add 'AEIOU' to string
-        print(s.capitalize())       
-        return s.capitalize()       # print and return string with capitalized first letter if first letter is a consonant
+    if s[0].lower() not in 'aeiou': # check if first letter is a vowel. alternative is to remove .lower and add 'AEIOU' to string    
+        return s.capitalize()       # return string with capitalized first letter if first letter is a consonant
     else:
-        print(s)
-        return(s)                   # print and return string as normal if first letter is a vowel
+        return(s)                   # return string as normal if first letter is a vowel
         
 capital_consonant('cat')
 
